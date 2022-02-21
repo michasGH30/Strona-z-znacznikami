@@ -1,0 +1,74 @@
+body
+{
+    background:grey;
+}
+.logo
+{
+    float:left;
+    font-size: 50px;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    border: 5px solid black;
+    padding: 5px;
+    border-radius: 10px;
+    width: 25%;
+}
+.html5_logo:hover
+{
+    color: green;
+    cursor: progress;
+}
+.css3_logo:hover
+{
+    color: yellow;
+    cursor: grab;
+}
+.top_nav
+{
+    float:left;
+    font-size: 50px;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 5px;
+    text-align: center;
+    width: 70%;
+    background: lightblue;
+    margin-top: 5px;
+}
+.clear
+{
+    clear: both;
+}
+.container
+{
+    width: 1000px;
+    margin: auto;
+}
+main
+{
+    float:left;
+    width: 73%;
+    background: red;
+    padding: 10px;
+}
+aside
+{
+    float: left;
+    width: 25%;
+    background: yellow;
+}
+article>header>h1
+{
+    color:white;
+    margin: 5px;
+}
+table, th, td
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+th, td
+{
+    padding: 2px;
+}

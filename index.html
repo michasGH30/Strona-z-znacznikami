@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Znaczniki HTML5 i CSS3</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <span class="html5_logo">HTML5</span> & <span class="css3_logo">CSS3</span>
+                </div>
+                <div class="top_nav">Strona o znacznikach HTML5 & CSS3</div>
+                <div class="clear"></div>
+            </nav>
+        </header>
+
+        <div class="container">
+            <main>
+                <article>
+                    <header>
+                        <h1>Znaczniki w HTML5</h1>
+                    </header>
+                    <table>
+                        <caption>Oprócz oczywistych</caption>
+                        <thead><th>Znacznik</th>    <th>Opis</th>   <th>Możliwe działanie</th></thead>
+                        <tbody>
+
+                            <tr>
+                                <td>abbr </td> <td>Stosowane do skrótów długich nazw jak Stany Zjednoczone Ameryki -> USA</td>    <td><abbr title="Stany Zjednoczone Ameryki">USA</abbr></td>
+                            </tr>
+
+                            <tr>
+                                <td>address</td>    <td>Informacje kontaktowe do autora</td>    <td><address>michal.zuk30601@gmail.com</address></td>
+                            </tr>
+
+                            <tr>
+                                <td>area</td>   <td>Tworzy interekatywne pola na np. obrazkach</td>   <td>&lt;img src="img.jpg" usemap="#map"&gt; <br> &lt;map name="map"&gt;<br>&lt;area shape="rect" coords="x,y,z,w" href="web.html"&gt;<br>&lt;/map&gt;</td>
+                            </tr>
+
+                            <tr>
+                                <td>audio</td>  <td>Definiuje plik audio na stronie</td>    <td><audio src="birds.mp3" controls="controls">Twoja przeglądrka nie obsługuje znacznika HTML5 audio</audio></td>
+                            </tr>
+
+                            <tr>
+                                <td>base</td>   <td>Definiuje główną stronę dla linków</td> <td>&lt;base href="https://www.web.pl/"&gt;<br>&lt;a href="subpage/subpage.html"&gt;</td>
+                            </tr>
+
+                            <tr>
+                                <td>bdi</td>    <td>Tworzy tekst który jest automatycznie pisany w inną stronę niż cała reszta</td> <td><p dir="ltr">Tekst normalny <bdi>Inny tekst</bdi></p></td>
+                            </tr>
+
+                            <tr>
+                                <td>bdo</td>    <td>Zmienia rodzaj pisowni ltr/rtl</td> <td>To jest tekst <bdo dir="rtl">To też jest tekst</bdo></td>
+                            </tr>
+
+                            <tr>
+                                <td>blockquote</td> <td>Tworzy blok cytatu</td> <td><blockquote>Cytat</blockquote></td>
+                            </tr>
+
+                            <tr>
+                                <td>canvas</td> <td>Tworzy płaszczyznę do rysowania za pomocą JS</td> <td><canvas id="myCanvas" width="300" height="200"></canvas>
+                                    <script>
+                                        window.onload = function(){
+                                            var canvas = document.getElementById("myCanvas");
+                                            var context = canvas.getContext("2d");
+                                            context.moveTo(50, 150);
+                                            context.lineTo(250, 50);
+                                            context.stroke();
+                                        };
+                                    </script></td>
+                            </tr>
+
+                            <tr>
+                                <td>caption</td>    <td>Tworzy nagłówek tabeli</td> <td>Oprócz oczywistych jw.</td>
+                            </tr>
+
+                            <tr>
+                                <td>cite</td>   <td>Zaznaczenie jako odniśnik do innego dzieła</td> <td><cite>Harry Potter</cite> to moja ulubiona książka</td>
+                            </tr>
+
+                            <tr>
+                                <td>code</td>   <td>Oznaczenie kodu komputerowego</td>  <td>Instrukcja <code>std::cout&lt;&lt;"Hello world"&lt;&lt;std::endl;</code> w C++</td>
+                            </tr>
+
+                            <tr>  
+                                <td>col</td>    <td>Styl dla poszczególnych kolumn w tabeli</td>    <td> colgroup col style="..." colgroup</td>
+                            </tr>
+
+                            <tr>
+                                <td>data</td>   <td>Dane dla programów czytających strony</td>  <td>data value="1" Tekst data</td>
+                            </tr>
+
+                            <tr>
+                                <td>datalist</td> <td>Tworzy listę pól, które mogą zostać wybrane w inpucie</td> <td><input type="text" list="fruits"><datalist id="fruits"><option value="orange"><option value="apple"></datalist></td>
+                            </tr>
+                        </tbody>
+                    </table> 
+                </article>
+            </main>
+            <aside>
+                aside
+            </aside>
+            <div class="clear"></div>
+        </div>
+
+        <footer><a href="https://www.tutorialrepublic.com/html-reference/html5-tags.php" target="_blank">Źródło</a></footer>
+    </body>
+</html>
