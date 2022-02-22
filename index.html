@@ -96,6 +96,116 @@
                             <tr>
                                 <td>datalist</td> <td>Tworzy listę pól, które mogą zostać wybrane w inpucie</td> <td><input type="text" list="fruits"><datalist id="fruits"><option value="orange"><option value="apple"></datalist></td>
                             </tr>
+
+                            <tr>
+                                <td>dl,dt,dd</td> <td>Służy do tworzenia list z definicjami.</td> <td>List of definitions:<dl><dt>term1</dt><dd>– definition1</dd><dt>term2</dt><dd>– definition2</dd>
+                                </dl></td>
+                            </tr>
+
+                            <tr>
+                                <td>del</td>    <td>Służy do oznaczenia rzeczy, które zostały usunięte.</td>    <td>Tekst <del>usunięty</del></td>
+                            </tr>
+
+                            <tr>
+                                <td>details, summary</td>    <td>Tworzy odnośnik, który po kliknięciu pokazuje szczegóły.</td>    <td><details><summary>What is HTML?</summary><p>HTML stands for HyperText Markup Language. HTML is the main markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
+                                </details></td>
+                            </tr>
+
+                            <tr>
+                                <td>dfn</td>    <td>Tworzy skrót do definicji po najechaniu.</td>   <td><p>The <dfn title="Hyper Text Markup Language">HTML</dfn> is the publishing language of the World Wide Web.</p></td>
+                            </tr>
+
+                            <tr>
+                                <td>dialog</td> <td>Tworzy pole dialogu, który może zostać użyty przez użytkownika.</td>    <td><div id="imgBox"><p><img src="sky.jpg" alt="Cloudy Sky"></p><button type="button" onclick="confirmDelete();">Delete image</button></div><dialog id="confirmDialog"><p>Are you sure you want to delete this item?</p><button type="button" onclick="deleteImage();">Yes</button><button type="button" onclick="hideDialog();">No</button></dialog><script>var dialog = document.getElementById("confirmDialog");var img = document.getElementById("imgBox");function confirmDelete() {if(typeof dialog.showModal === "function") {dialog.showModal();} else {alert("Your browser does not support dialog element!");}}function deleteImage() {        img.parentNode.removeChild(img);dialog.close();}function hideDialog() {dialog.close();}</script></td>
+                            </tr>
+
+                            <tr>
+                                <td>em</td> <td>Służy do wyróżnienia ważnej informacji.</td>    <td>This is an <em>important point</em> to consider.</td>
+                            </tr>
+
+                            <tr>
+                                <td>embed</td>  <td>Służy do wstawienia aplikacji, najczęściej audio lub video.</td>    <td><embed src="sky.jpg" width="400px" height="200px"></td>
+                            </tr>  
+
+                            <tr>
+                                <td>fieldset</td>   <td>Służy do logicznego połączenia pól w formularzu.</td>   <td><form action="http://www.example.com/" method="post"><fieldset><legend>Gender</legend><input type="radio" name="gender" value="male" id="male"><label for="male">Male</label><input type="radio" name="gender" value="female" id="female"><label for="female">Female</label></fieldset></form></td>
+                            </tr>
+
+                            <tr>
+                                <td>legend</td> <td>Służy do nadania nagłówka dla fieldset</td> <td>na razie brak.</td>
+                            </tr>
+
+                            <tr>
+                                <td>figure, figcaption</td> <td>Tworzy pole wraz z podpisem.</td>   <td><figure><img src="sky.jpg" alt="Space Shuttle"><figcaption>Niebo - po prostu niebo.</figcaption></figure></td>
+                            </tr>
+
+                            <tr>
+                                <td>hgroup</td> <td>Grupuje nagłówki.</td>  <td><hgroup><h6>Nagłówek 1.</h6><h5>Nagłówek 2.</h5></hgroup></td>
+                            </tr>
+
+                            <tr>
+                                <td>hr</td> <td>Tworzy poziomą linię.</td>  <td>Tekst.<hr>Tekst.</td>
+                            </tr>
+
+                            <tr>
+                                <td>iframe</td> <td>Tworzy pole gdzie można wstawić inny dokument html.</td>    <td>na razie brak.</td>
+                            </tr>
+
+                            <tr>
+                                <td>ins</td>    <td>Służy do oznaczenia dodanej zawartości.</td>    <td><ul><li>Buy some cookies</li><li><ins>Do some cleaning</ins></li><li>Relaxation time</li><li><ins>Visit a doctor</ins></li></ul></td>
+                            </tr>
+
+                            <tr>
+                                <td>kbd</td>    <td>Służy do oznaczenia tekstu, który ma być wpisany przez użytkownika.</td>    <td>Please, input "<kbd>Yes</kbd>" or "<kbd>No</kbd>"</td>
+                            </tr>
+
+                            <tr>
+                                <td>keygen</td> <td>Tworzy jakiś klucz.</td>    <td>na razie brak.</td>
+                            </tr>
+
+                            <tr>
+                                <td>mark</td>   <td>Służy do wyróżnienia tekstu.</td>   <td>This is some <mark>highlighted</mark> text.</td>
+                            </tr>
+
+                            <tr>
+                                <td>meter</td>  <td>Reprezentacja wartości za pomocą paska.</td>    <td>End of work: <meter value="0.9"></td>
+                            </tr>
+
+                            <tr>
+                                <td>noscript</td>   <td>Służy jako zamiennik, gdy przeglądrka nie obsługuje JS.</td>    <td>na razie brak.</td>
+                            </tr>
+
+                            <tr>
+                                <td>object, param</td>  <td>Służy do wstawiania różnych rzeczy.</td>    <td>na razie brak.</td>
+                            </tr>
+
+                            <tr>
+                                <td>optgroup</td>   <td>Służy do grupowania elementów w menu wyboru.</td>   <td><select><optgroup label="Sports cars"><option value="ferrari">Ferrari</option><option value="lamborghini">Lamborghini</option></optgroup><optgroup label="Luxury cars"><option value="mercedes">Mercedes</option><option value="bentley">Bentley</option></optgroup></select></td>
+                            </tr>
+
+                            <tr>
+                                <td>output</td> <td>Tworzy pole dla wyników matematycznych.</td>    <td><form oninput="result.value=parseInt(a.value)+parseInt(b.value)"><input type="range" id="a" value="50"> +<input type="number" id="b" value="100"> =<output name="result" for="a b"></output></form></td>
+                            </tr>
+
+                            <tr>
+                                <td>picture</td>    <td>Tworzy pole dla zdjęć zależnych od rozmiaru przeglądki.</td>    <td>na razie brak.</td>
+                            </tr>
+
+                            <tr>
+                                <td>pre</td>    <td>Służy do wyświetlania z góry sformatowanego tekstu za pomocą spacji i tabulacji.</td>   <td><pre>
+                                    The pre
+                                        element preserves      spaces,
+                                            line-breaks, tabs...
+                                    </pre></td>
+                            </tr>
+
+                            <tr>
+                                <td>progress</td>   <td>Służy do tworzenia pasków postępu.</td> <td>na razie brak.</td>
+                            </tr>
+
+                            <tr>
+                                <td>q</td>  <td>Służy do krótkiego cytowania.</td>  <td>John said, <q>He loves Star Wars movies.</q></td>
+                            </tr>
                         </tbody>
                     </table> 
                 </article>
