@@ -25,7 +25,7 @@
                     </header>
                     <table>
                         <caption>Oprócz oczywistych</caption>
-                        <thead><th>Znacznik</th>    <th>Opis</th>   <th>Możliwe działanie</th></thead>
+                        <thead><th>Znacznik</th>    <th>Opis</th>   <th>Działanie</th></thead>
                         <tbody>
 
                             <tr>
@@ -37,7 +37,7 @@
                             </tr>
 
                             <tr>
-                                <td>area</td>   <td>Tworzy interekatywne pola na np. obrazkach</td>   <td>&lt;img src="img.jpg" usemap="#map"&gt; <br> &lt;map name="map"&gt;<br>&lt;area shape="rect" coords="x,y,z,w" href="web.html"&gt;<br>&lt;/map&gt;</td>
+                                <td>area, map</td>   <td>Tworzy interekatywne pola na np. obrazkach</td>   <td>&lt;img src="img.jpg" usemap="#map"&gt; <br> &lt;map name="map"&gt;<br>&lt;area shape="rect" coords="x,y,z,w" href="web.html"&gt;<br>&lt;/map&gt;</td>
                             </tr>
 
                             <tr>
@@ -132,7 +132,7 @@
                             </tr>
 
                             <tr>
-                                <td>legend</td> <td>Służy do nadania nagłówka dla fieldset</td> <td>na razie brak.</td>
+                                <td>legend</td> <td>Służy do nadania nagłówka dla fieldset</td> <td>---</td>
                             </tr>
 
                             <tr>
@@ -148,7 +148,7 @@
                             </tr>
 
                             <tr>
-                                <td>iframe</td> <td>Tworzy pole gdzie można wstawić inny dokument html.</td>    <td>na razie brak.</td>
+                                <td>iframe</td> <td>Tworzy pole gdzie można wstawić inny dokument html.</td>    <td>---</td>
                             </tr>
 
                             <tr>
@@ -160,7 +160,7 @@
                             </tr>
 
                             <tr>
-                                <td>keygen</td> <td>Tworzy jakiś klucz.</td>    <td>na razie brak.</td>
+                                <td>keygen</td> <td>Tworzy jakiś klucz.</td>    <td>---</td>
                             </tr>
 
                             <tr>
@@ -172,11 +172,11 @@
                             </tr>
 
                             <tr>
-                                <td>noscript</td>   <td>Służy jako zamiennik, gdy przeglądrka nie obsługuje JS.</td>    <td>na razie brak.</td>
+                                <td>noscript</td>   <td>Służy jako zamiennik, gdy przeglądrka nie obsługuje JS.</td>    <td>---</td>
                             </tr>
 
                             <tr>
-                                <td>object, param</td>  <td>Służy do wstawiania różnych rzeczy.</td>    <td>na razie brak.</td>
+                                <td>object, param</td>  <td>Służy do wstawiania różnych rzeczy.</td>    <td>---</td>
                             </tr>
 
                             <tr>
@@ -188,7 +188,7 @@
                             </tr>
 
                             <tr>
-                                <td>picture</td>    <td>Tworzy pole dla zdjęć zależnych od rozmiaru przeglądki.</td>    <td>na razie brak.</td>
+                                <td>picture</td>    <td>Tworzy pole dla zdjęć zależnych od rozmiaru przeglądki.</td>    <td>---</td>
                             </tr>
 
                             <tr>
@@ -200,22 +200,237 @@
                             </tr>
 
                             <tr>
-                                <td>progress</td>   <td>Służy do tworzenia pasków postępu.</td> <td>na razie brak.</td>
+                                <td>progress</td>   <td>Służy do tworzenia pasków postępu.</td> <td>---</td>
                             </tr>
 
                             <tr>
                                 <td>q</td>  <td>Służy do krótkiego cytowania.</td>  <td>John said, <q>He loves Star Wars movies.</q></td>
                             </tr>
+
+                            <tr>
+                                <td>ruby, rp, rt</td> <td>Służy do wyświetlania znaków w językach takich jak Japoński czy Chiński.</td> <td><ruby>漢 <rp>(</rp><rt>Kan</rt><rp>)</rp>字 <rp>(</rp><rt>ji</rt><rp>)</rp></ruby></td>
+                            </tr>
+
+                            <tr>
+                                <td>s</td>  <td>Służy do przekreślenia tekstu zamiast "strike".</td>    <td>Here is some <s>strikethrough</s> text.</td>
+                            </tr>
+
+                            <tr>
+                                <td>samp</td>   <td>Oznacza teskt, który jest winikiem działania programu.</td> <td>If the browser display an error message such as "<samp>HTTP 404 - File not found</samp>" you may simply have typed the incorrect url address.</td>
+                            </tr>
+
+                            <tr>
+                                <td>video, source</td> <td>Alternatywna forma wstawiania audio czy video.</td> <td><video controls="controls"><source src="birds.mp3" type="audio/mp3">Your browser does not support the HTML5 Video element.</video></td>
+                            </tr>
+
+                            <tr>
+                                <td>svg</td>    <td>Blok wstawiający rysowane wykresy, rysunki.</td>    <td><svg width="500" height="350"><rect x="100" y="100" width="300" height="150" fill="yellow" stroke="black" stroke-width="5" /></svg></td>
+                            </tr>
+
+                            <tr>
+                                <td>template</td>   <td>Służy do wstawiania danych za pomocą JS(dane nie są renderowane podczas wczytywania strony).</td>   <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>tfoot</td>  <td>Stopka dla tabeli.</td> <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>time</td>   <td>Służy do wstawiania daty i godziny.</td>    <td>The library opens at <time>8:30 am</time> every morning. The concert took place on <time datetime="2016-12-31 12:00">31 Dec</time>.</td>
+                            </tr>
+
+                            <tr>
+                                <td>track</td>  <td>Dodaje napisy.</td> <td>---<track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English"></td>
+                            </tr>
+
+                            <tr>
+                                <td>var</td>    <td>Służy do oznacznie tekstu jako zmienną.</td>    <td>A simple equation: <var>x</var> = <var>y</var> + 2 </td>
+                            </tr>
+
+                            <tr>
+                                <td>wbr</td>    <td>Określa pozycję w tekście, w której przeglądarka może opcjonalnie przełamać linię, jeśli to konieczne.</td> <td>The XML<wbr>Http<wbr>Request object is the key to AJAX</td>
+                            </tr>
                         </tbody>
                     </table> 
+                </article>
+                <article>
+                    <header><h1>Składnia CSS3</h1></header>
+                    <table>
+                        <caption>Oprócz oczywistych.</caption>
+                        <thead><th>Znacznik</th>    <th>Opis</th>   <th>Działanie</th></thead>
+                        <tbody>
+                            <tr>
+                                <td>.class1.class2</td> <td>Działa jeżeli obiekt ma klasę class1 i class2.</td>  <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>.class1 .class2</td>    <td>Działa jeżeli obiekt ma class2 i zawiera się w class1.</td>  <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>div, p</td> <td>Działa na wszystkie znaczniki div i p.</td>  <td>---</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>div > p</td>    <td>Działa na wszystkie znaczniki p które mają rodzica div.</td> <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>div + p</td>    <td>Działa na znaczniki p które są bezpośrednio po div.</td>    <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>p ~ ul</td> <td>Działa kiedy znacznik ul jest poprzedzony znacznikiem p</td>    <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>[target]</td>   <td>Działa na znaczniki z atrybutem target.</td>    <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>[target=_blank</td> <td>Działa na znaczniki z atrybutem target i wartością _blank.</td> <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>[title~=flower]</td> <td>Działa na znacznikach gdzie tytuł zawiera "flower".</td>   <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>[lang|=en]</td> <td>Działa na znacznikach gdzie atrybut lang jest w zaczyna się od "en".</td>   <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>a[href^="https"]</td>   <td>Działa na znacznikach a gdzie wartość atrybutu href zaczyna się od "https".</td>    <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>a[href$=".pdf"]</td>    <td>Działa na znacznikach a gdzie wartość atrybutu href kończy się na ".pdf".</td>  <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>a[href*="w3schools"]</td>   <td>Działa na znacznikach a gdy wartosć atrybutu href zawiera słowo "w3schools".</td>   <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>p::after, p::before</td>   <td>Definiuje akcje, które wykonają się po(przed) znacziku p.</td>  <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>input:checked</td>  <td>Działa na zaznaczonych elementach.</td> <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>input:default</td>  <td>Działa na domyślnie zaznaczonych elementach.</td>   <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>input:enabled, input:disabled</td> <td>Działa na elementach z artybutem enabled(disabled).</td> <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>p:empty</td>    <td>Działa na pustych elementach.</td>  <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>p:first-child, p:last-child</td>  <td>Działa na każdy znacznik p który jest pierwszym(ostatnim) elementem w bloku.</td> <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>p:first-letter, p:first-line</td>   <td>Działa na pierwszą literę(linię) w znaczniku p.</td>    <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>p:first-of-type, p:last-of-type</td>    <td>Działa na pierwszy(ostatni) znacznik p w????</td>    <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>:fullscreen</td>    <td>Działa na elementy, kiedy są w trybie fullscreen</td>   <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>input:in-range, input:out-of-range</td> <td>Działa na elementy kiedy wpiszemy wartość z(poza) zakresu.</td> <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>input:indeterminate</td>    <td>Działa na wstepnie zaznaczonych elementach za pomocą JS.</td>   <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>input:valid, input:invalid</td>  <td>Działa na elemtach, które są (nie)poprawnie zaznaczone.</td>  <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>p:lang(pl)</td> <td>Działa elementach z danym językiem.</td>    <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>::marker</td>   <td>Modyfikuje marker w liście.</td>    <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>:not(p)</td>    <td>Działa na wszystko oprócz znacznika p.</td> <td>---</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>p:nth-child(2)</td> <td>???.</td>   <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>p:nth-last-child(2)</td>    <td>???.</td>   <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>p:nth-last-of-type(2)</td>  <td>Działa na element, który jest n-ty od końca.??</td> <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>p:nth-of-type(2)</td>   <td>Działa na każdy n-ty element.</td>  <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>p:only-of-type</td> <td>???.</td>   <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>p:only-child</td>   <td>Działa gdy element jest jedyny w bloku.</td>    <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>input::placeholder</td> <td>Definiuje styl placeholder'a.</td>  <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>input:read-only</td>    <td>Działa na elementach, które są read-only.</td>  <td></td>
+                            </tr>
+
+                            <tr>
+                                <td>input:read-write</td>   <td>Działa na elemntach, które nie są read-only.</td>   <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>input:required, input:optional</td> <td>Działa na elementach, które są (nie)obowiązkowe do uzupełnienia.</td>    <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>:root</td> <td>Definiuje styl dla okna root dokumentu.</td> <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>::selection</td>    <td>Działa na zaznaczony tekst.</td>    <td>---</td>
+                            </tr>
+
+                            <tr>
+                                <td>:target</td>    <td>Zmienia elementy na które wskazują kotwice.</td>    <td>---</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </article>
             </main>
             <aside>
                 aside
             </aside>
-            <div class="clear"></div>
         </div>
 
-        <footer><a href="https://www.tutorialrepublic.com/html-reference/html5-tags.php" target="_blank">Źródło</a></footer>
+        <footer><a href="https://www.tutorialrepublic.com/html-reference/html5-tags.php" target="_blank">Źródło</a><br><a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">Źródło</a></footer>
     </body>
 </html>

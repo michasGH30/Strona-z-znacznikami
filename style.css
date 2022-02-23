@@ -46,15 +46,11 @@ body
 }
 main
 {
-    float:left;
-    width: 73%;
     background: red;
     padding: 10px;
 }
 aside
 {
-    float: left;
-    width: 25%;
     background: yellow;
 }
 article>header>h1
