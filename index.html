@@ -25,39 +25,39 @@
                     </header>
                     <table>
                         <caption>Oprócz oczywistych</caption>
-                        <thead><th>Znacznik</th>    <th>Opis</th>   <th>Działanie</th></thead>
+                        <thead><th>Znacznik</th>    <th>Opis</th>   <th>Działanie</th> <th>Kod</th></thead>
                         <tbody>
 
                             <tr>
-                                <td>abbr </td> <td>Stosowane do skrótów długich nazw jak Stany Zjednoczone Ameryki -> USA</td>    <td><abbr title="Stany Zjednoczone Ameryki">USA</abbr></td>
+                                <td>abbr </td> <td>Stosowane do skrótów długich nazw jak Stany Zjednoczone Ameryki -> USA</td>    <td><abbr title="Stany Zjednoczone Ameryki">USA</abbr></td>   <td>&lt;abbr title="Stany Zjednoczone Ameryki"&gt;USA&lt;/abbr&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>address</td>    <td>Informacje kontaktowe do autora</td>    <td><address>michal.zuk30601@gmail.com</address></td>
+                                <td>address</td>    <td>Informacje kontaktowe do autora</td>    <td><address>michal.zuk30601@gmail.com</address></td>   <td>&lt;address&gt;michal.zuk30601@gmail.com&lt;/address&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>area, map</td>   <td>Tworzy interekatywne pola na np. obrazkach</td>   <td>&lt;img src="img.jpg" usemap="#map"&gt; <br> &lt;map name="map"&gt;<br>&lt;area shape="rect" coords="x,y,z,w" href="web.html"&gt;<br>&lt;/map&gt;</td>
+                                <td>area, map</td>   <td>Tworzy interekatywne pola na np. obrazkach</td>   <td><img src="shapes.png" alt="Geometrical Shapes" usemap="#shapes"><map name="shapes"><area shape="circle" coords="40,40,40" href="circle.html" target="_blank" alt="Circle"><area shape="poly" coords="148,2,104,80,193,80" href="triangle.html" target="_blank" alt="Triangle"><area shape="rect" coords="226,2,323,80" href="rectangle.html" target="_blank" alt="Rectangle"><area shape="poly" coords="392,2,352,32,366,80,418,80,432,32" href="pentagon.html" target="_blank" alt="Pentagon"></map></td>   <td>&lt;img src="shapes.png" alt="Geometrical Shapes" usemap="#shapes"&gt;<br>&lt;map name="shapes"&gt;<br>&lt;area shape="circle" coords="40,40,40" href="circle.html" target="_blank" alt="Circle"&gt;<br>&lt;area shape="poly" coords="148,2,104,80,193,80" href="triangle.html" target="_blank" alt="Triangle"&gt;<br>&lt;area shape="rect" coords="226,2,323,80" href="rectangle.html" target="_blank" alt="Rectangle"&gt;<br>&lt;area shape="poly" coords="392,2,352,32,366,80,418,80,432,32" href="pentagon.html" target="_blank" alt="Pentagon"&gt;<br>&lt;/map&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>audio</td>  <td>Definiuje plik audio na stronie</td>    <td><audio src="birds.mp3" controls="controls">Twoja przeglądrka nie obsługuje znacznika HTML5 audio</audio></td>
+                                <td>audio</td>  <td>Definiuje plik audio na stronie</td>    <td><audio src="birds.mp3" controls="controls">Twoja przeglądrka nie obsługuje znacznika HTML5 audio</audio></td>   <td>&lt;audio src="birds.mp3" controls="controls"&gt;Twoja przeglądrka nie obsługuje znacznika HTML5 audio&lt;/audio&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>base</td>   <td>Definiuje główną stronę dla linków</td> <td>&lt;base href="https://www.web.pl/"&gt;<br>&lt;a href="subpage/subpage.html"&gt;</td>
+                                <td>base</td>   <td>Definiuje główną stronę dla linków</td> <td>&lt;base href="https://www.web.pl/"&gt;<br>&lt;a href="subpage/subpage.html"&gt;</td>   <td>&lt;base href="https://www.web.pl/"&gt;<br>&lt;a href="subpage/subpage.html"&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>bdi</td>    <td>Tworzy tekst który jest automatycznie pisany w inną stronę niż cała reszta</td> <td><p dir="ltr">Tekst normalny <bdi>Inny tekst</bdi></p></td>
+                                <td>bdi</td>    <td>Tworzy tekst który jest automatycznie pisany w inną stronę niż cała reszta</td> <td><p dir="ltr">Tekst normalny <bdi>Inny tekst</bdi></p></td>  <td>&lt;p dir="ltr"&gt;Tekst normalny &lt;bdi&gt;Inny tekst&lt;/bdi&gt;&lt;/p&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>bdo</td>    <td>Zmienia rodzaj pisowni ltr/rtl</td> <td>To jest tekst <bdo dir="rtl">To też jest tekst</bdo></td>
+                                <td>bdo</td>    <td>Zmienia rodzaj pisowni ltr/rtl</td> <td>To jest tekst <bdo dir="rtl">To też jest tekst</bdo></td>   <td>&lt;To jest tekst &lt;bdo dir="rtl"&gt;To też jest tekst&lt;/bdo&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>blockquote</td> <td>Tworzy blok cytatu</td> <td><blockquote>Cytat</blockquote></td>
+                                <td>blockquote</td> <td>Tworzy blok cytatu</td> <td><blockquote><p>Cytat ~Michał Żuk 2022.</p></blockquote></td>    <td>&lt;blockquote&gt;&lt;p&gt;Cytat ~Michał Żuk 2022.&lt;/p&gt;&lt;/blockquote&gt;</td>
                             </tr>
 
                             <tr>
@@ -70,65 +70,101 @@
                                             context.lineTo(250, 50);
                                             context.stroke();
                                         };
-                                    </script></td>
+                                    </script></td>  <td>&lt;canvas id="myCanvas" width="300" height="200"&gt;&lt;/canvas&gt;<br>&lt;script&gt;window.onload = function()<br>{var canvas = document.getElementById("myCanvas");<br>var context = canvas.getContext("2d");<br>context.moveTo(50, 150);<br>context.lineTo(250, 50);<br>context.stroke();};&lt;/script&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>caption</td>    <td>Tworzy nagłówek tabeli</td> <td>Oprócz oczywistych jw.</td>
+                                <td>caption</td>    <td>Tworzy nagłówek tabeli</td> <td>Oprócz oczywistych jw.</td> <td>&lt;caption&gt;Oprócz oczywistych&lt;/caption&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>cite</td>   <td>Zaznaczenie jako odniśnik do innego dzieła</td> <td><cite>Harry Potter</cite> to moja ulubiona książka</td>
+                                <td>cite</td>   <td>Zaznaczenie jako odniśnik do innego dzieła</td> <td><cite>Harry Potter</cite> to moja ulubiona książka</td> <td>&lt;cite&gt;Harry Potter&lt;/cite&gt; to moja ulubiona książka</td>
                             </tr>
 
                             <tr>
-                                <td>code</td>   <td>Oznaczenie kodu komputerowego</td>  <td>Instrukcja <code>std::cout&lt;&lt;"Hello world"&lt;&lt;std::endl;</code> w C++</td>
+                                <td>code</td>   <td>Oznaczenie kodu komputerowego</td>  <td>Instrukcja <code>std::cout&lt;&lt;"Hello world"&lt;&lt;std::endl;</code> w C++</td> <td>Instrukcja &lt;code&gt;std::cout&lt;&lt;"Hello world"&lt;&lt;std::endl;&lt;/code&gt; w C++</td>
                             </tr>
 
                             <tr>  
-                                <td>col</td>    <td>Styl dla poszczególnych kolumn w tabeli</td>    <td> colgroup col style="..." colgroup</td>
+                                <td>col</td>    <td>Styl dla poszczególnych kolumn w tabeli</td>    <td><table style="margin: auto;">
+                                    <colgroup>
+                                        <col style="background-color:#adff2f;">
+                                        <col span="2" style="background-color:#f0e68c;">
+                                    </colgroup>
+                                    <tr>
+                                        <th>No.</th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>John Carter</td>
+                                        <td>johncarter@mail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Peter Parker</td>
+                                        <td>peterparker@mail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>John Rambo</td>
+                                        <td>johnrambo@mail.com</td>
+                                    </tr>
+                                </table></td>   <td>&lt;table&gt;&lt;colgroup&gt;<br>&lt;col style="background-color:#adff2f;"&gt;<br>&lt;col span="2" style="background-color:#f0e68c;"&gt;&lt;/colgroup&gt;<br>---<br>&lt;/table&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>data</td>   <td>Dane dla programów czytających strony</td>  <td>data value="1" Tekst data</td>
+                                <td>data</td>   <td>Dane dla programów czytających strony</td>  <td><style>
+                                    data:hover::after {
+                                        content: ' (ID ' attr(value) ')';
+                                        font-size: .7em;
+                                    }
+                                </style><p>New Products</p>
+                                    <ul>
+                                        <li><data value="204">Green Tea</data></li>
+                                        <li><data value="205">Tomato Ketchup</data></li>
+                                        <li><data value="206">Roasted Coffee Beans</data></li>
+                                    </ul>
+                                    <p><strong>Note:</strong> Place the mouse pointer over the list item to see how it actually works.</p></td> 
+
+                                    <td>&lt;ul&gt;<br>&lt;li&gt;&lt;data value="204"&gt;Green Tea&lt;/data&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;data value="205"&gt;Tomato Ketchup&lt;/data&gt;&lt;/li&gt;<br>&lt;li&gt;&lt;data value="206"&gt;Roasted Coffee Beans&lt;/data&gt;&lt;/li&gt;<br>&lt;/ul&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>datalist</td> <td>Tworzy listę pól, które mogą zostać wybrane w inpucie</td> <td><input type="text" list="fruits"><datalist id="fruits"><option value="orange"><option value="apple"></datalist></td>
+                                <td>datalist</td> <td>Tworzy listę pól, które mogą zostać wybrane w inpucie</td> <td><input type="text" list="fruits"><datalist id="fruits"><option value="orange"><option value="apple"></datalist></td>   <td>&lt;input type="text" list="fruits"&gt;&lt;datalist id="fruits"&gt;&lt;option value="orange"&gt;&lt;option value="apple"&gt;&lt;/datalist&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>dl,dt,dd</td> <td>Służy do tworzenia list z definicjami.</td> <td>List of definitions:<dl><dt>term1</dt><dd>– definition1</dd><dt>term2</dt><dd>– definition2</dd>
-                                </dl></td>
+                                <td>dl,dt,dd</td> <td>Służy do tworzenia list z definicjami.</td> <td>List of definitions:<dl><dt>term1</dt><dd>– definition1</dd><dt>term2</dt><dd>– definition2</dd></dl></td>    <td>List of definitions:<br>&lt;dl&gt;&lt;dt&gt;term1&lt;/dt&gt;<br>&lt;dd&gt;– definition1&lt;/dd&gt;<br>&lt;dt&gt;term2&lt;/dt&gt;<br>&lt;dd&gt;– definition2&lt;/dd&gt;&lt;/dl&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>del</td>    <td>Służy do oznaczenia rzeczy, które zostały usunięte.</td>    <td>Tekst <del>usunięty</del></td>
+                                <td>del</td>    <td>Służy do oznaczenia rzeczy, które zostały usunięte.</td>    <td>Tekst <del>usunięty</del></td>  <td>Tekst &lt;del&gt;usunięty&lt;/del&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>details, summary</td>    <td>Tworzy odnośnik, który po kliknięciu pokazuje szczegóły.</td>    <td><details><summary>What is HTML?</summary><p>HTML stands for HyperText Markup Language. HTML is the main markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p>
-                                </details></td>
+                                <td>details, summary</td>    <td>Tworzy odnośnik, który po kliknięciu pokazuje szczegóły.</td>    <td><details><summary>What is HTML?</summary><p>HTML stands for HyperText Markup Language. HTML is the main markup language for describing the structure of web pages. <a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank">Learn more.</a></p></details></td>   <td>&lt;details&gt;&lt;summary&gt;What is HTML?&lt;/summary&gt;&lt;p&gt;HTML stands for HyperText Markup Language. HTML is the main markup language for describing the structure of web pages. &lt;a href="https://www.tutorialrepublic.com/html-tutorial/" target="_blank"&gt;Learn more.&lt;/a&gt;&lt;/p&gt;&lt;/details&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>dfn</td>    <td>Tworzy skrót do definicji po najechaniu.</td>   <td><p>The <dfn title="Hyper Text Markup Language">HTML</dfn> is the publishing language of the World Wide Web.</p></td>
+                                <td>dfn</td>    <td>Tworzy skrót do definicji po najechaniu.</td>   <td><p>The <dfn title="Hyper Text Markup Language">HTML</dfn> is the publishing language of the World Wide Web.</p></td>    <td>&lt;p&gt;The &lt;dfn title="Hyper Text Markup Language"&gt;HTML&lt;/dfn&gt; is the publishing language of the World Wide Web.&lt;/p&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>dialog</td> <td>Tworzy pole dialogu, który może zostać użyty przez użytkownika.</td>    <td><div id="imgBox"><p><img src="sky.jpg" alt="Cloudy Sky"></p><button type="button" onclick="confirmDelete();">Delete image</button></div><dialog id="confirmDialog"><p>Are you sure you want to delete this item?</p><button type="button" onclick="deleteImage();">Yes</button><button type="button" onclick="hideDialog();">No</button></dialog><script>var dialog = document.getElementById("confirmDialog");var img = document.getElementById("imgBox");function confirmDelete() {if(typeof dialog.showModal === "function") {dialog.showModal();} else {alert("Your browser does not support dialog element!");}}function deleteImage() {        img.parentNode.removeChild(img);dialog.close();}function hideDialog() {dialog.close();}</script></td>
+                                <td>dialog</td> <td>Tworzy pole dialogu, który może zostać użyty przez użytkownika.</td>    <td><div id="imgBox"><p><img src="sky.jpg" alt="Cloudy Sky"></p><button type="button" onclick="confirmDelete();">Delete image</button></div><dialog id="confirmDialog"><p>Are you sure you want to delete this item?</p><button type="button" onclick="deleteImage();">Yes</button><button type="button" onclick="hideDialog();">No</button></dialog><script>var dialog = document.getElementById("confirmDialog");var img = document.getElementById("imgBox");function confirmDelete() {if(typeof dialog.showModal === "function") {dialog.showModal();} else {alert("Your browser does not support dialog element!");}}function deleteImage() {        img.parentNode.removeChild(img);dialog.close();}function hideDialog() {dialog.close();}</script></td>  <td>&lt;dialog id="confirmDialog"&gt;&lt;p&gt;Are you sure you want to delete this item?&lt;/p&gt;&lt;button&gt;Yes&lt;/button&gt;&lt;button&gt;No&lt;/button&gt;&lt;/dialog&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>em</td> <td>Służy do wyróżnienia ważnej informacji.</td>    <td>This is an <em>important point</em> to consider.</td>
+                                <td>em</td> <td>Służy do wyróżnienia ważnej informacji.</td>    <td>This is an <em>important point</em> to consider.</td>   <td>This is an &lt;em&gt;important point&lt;/em&gt; to consider.</td>
                             </tr>
 
                             <tr>
-                                <td>embed</td>  <td>Służy do wstawienia aplikacji, najczęściej audio lub video.</td>    <td><embed src="sky.jpg" width="400px" height="200px"></td>
+                                <td>embed</td>  <td>Służy do wstawienia aplikacji, najczęściej audio lub video.</td>    <td><embed src="sky.jpg" width="400px" height="200px"></td> <td>&lt;embed src="sky.jpg" width="400px" height="200px"&gt;</td>
                             </tr>  
 
                             <tr>
-                                <td>fieldset</td>   <td>Służy do logicznego połączenia pól w formularzu.</td>   <td><form action="http://www.example.com/" method="post"><fieldset><legend>Gender</legend><input type="radio" name="gender" value="male" id="male"><label for="male">Male</label><input type="radio" name="gender" value="female" id="female"><label for="female">Female</label></fieldset></form></td>
+                                <td>fieldset</td>   <td>Służy do logicznego połączenia pól w formularzu.</td>   <td><form action="http://www.example.com/" method="post"><fieldset><legend>Gender</legend><input type="radio" name="gender" value="male" id="male"><label for="male">Male</label><input type="radio" name="gender" value="female" id="female"><label for="female">Female</label></fieldset></form></td> <td>&lt;fieldset&gt;&lt;legend&gt;Gender&lt;/legend&gt;&lt;input type="radio" name="gender" value="male" id="male"&gt;&lt;label for="male"&gt;Male&lt;/label&gt;&lt;input type="radio" name="gender" value="female" id="female"&gt;&lt;label for="female"&gt;Female&lt;/label&gt;&lt;/fieldset&gt;</td>
                             </tr>
 
                             <tr>
@@ -136,15 +172,15 @@
                             </tr>
 
                             <tr>
-                                <td>figure, figcaption</td> <td>Tworzy pole wraz z podpisem.</td>   <td><figure><img src="sky.jpg" alt="Space Shuttle"><figcaption>Niebo - po prostu niebo.</figcaption></figure></td>
+                                <td>figure, figcaption</td> <td>Tworzy pole wraz z podpisem.</td>   <td><figure><img src="sky.jpg" alt="Space Shuttle"><figcaption>Niebo - po prostu niebo.</figcaption></figure></td>  <td>&lt;figure&gt;&lt;img src="sky.jpg" alt="Space Shuttle"&gt;&lt;figcaption&gt;Niebo - po prostu niebo.&lt;/figcaption&gt;&lt;/figure&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>hgroup</td> <td>Grupuje nagłówki.</td>  <td><hgroup><h6>Nagłówek 1.</h6><h5>Nagłówek 2.</h5></hgroup></td>
+                                <td>hgroup</td> <td>Grupuje nagłówki.</td>  <td><hgroup><h6>Nagłówek 1.</h6><h5>Nagłówek 2.</h5></hgroup></td>  <td>&lt;hgroup&gt;&lt;h6&gt;Nagłówek 1.&lt;/h6&gt;&lt;h5&gt;Nagłówek 2.&lt;/h5&gt;&lt;/hgroup&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>hr</td> <td>Tworzy poziomą linię.</td>  <td>Tekst.<hr>Tekst.</td>
+                                <td>hr</td> <td>Tworzy poziomą linię.</td>  <td>Tekst.<hr>Tekst.</td>   <td>Tekst.&lt;hr&gt;Tekst.</td>
                             </tr>
 
                             <tr>
@@ -152,43 +188,43 @@
                             </tr>
 
                             <tr>
-                                <td>ins</td>    <td>Służy do oznaczenia dodanej zawartości.</td>    <td><ul><li>Buy some cookies</li><li><ins>Do some cleaning</ins></li><li>Relaxation time</li><li><ins>Visit a doctor</ins></li></ul></td>
+                                <td>ins</td>    <td>Służy do oznaczenia dodanej zawartości.</td>    <td><ul><li>Buy some cookies</li><li><ins>Do some cleaning</ins></li><li>Relaxation time</li><li><ins>Visit a doctor</ins></li></ul></td>   <td>&lt;ul&gt;&lt;li&gt;Buy some cookies&lt;/li&gt;&lt;li&gt;&lt;ins&gt;Do some cleaning&lt;/ins&gt;&lt;/li&gt;&lt;li&gt;Relaxation time&lt;/li&gt;&lt;li&gt;&lt;ins&gt;Visit a doctor&lt;/ins&gt;&lt;/li&gt;&lt;/ul&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>kbd</td>    <td>Służy do oznaczenia tekstu, który ma być wpisany przez użytkownika.</td>    <td>Please, input "<kbd>Yes</kbd>" or "<kbd>No</kbd>"</td>
+                                <td>kbd</td>    <td>Służy do oznaczenia tekstu, który ma być wpisany przez użytkownika.</td>    <td>Please, input "<kbd>Yes</kbd>" or "<kbd>No</kbd>"</td>  <td>Please, input "&lt;kbd&gt;Yes&lt;/kbd&gt;" or "&lt;kbd&gt;No&lt;/kbd&gt;"</td>
                             </tr>
 
                             <tr>
-                                <td>keygen</td> <td>Tworzy jakiś klucz.</td>    <td>---</td>
+                                <td>keygen</td> <td>Tworzy jakiś klucz.</td>    <td>---</td>    <td>---</td>
                             </tr>
 
                             <tr>
-                                <td>mark</td>   <td>Służy do wyróżnienia tekstu.</td>   <td>This is some <mark>highlighted</mark> text.</td>
+                                <td>mark</td>   <td>Służy do wyróżnienia tekstu.</td>   <td>This is some <mark>highlighted</mark> text.</td>    <td>This is some &lt;mark&gt;highlighted&lt;/mark&gt; text.</td>
                             </tr>
 
                             <tr>
-                                <td>meter</td>  <td>Reprezentacja wartości za pomocą paska.</td>    <td>End of work: <meter value="0.9"></td>
+                                <td>meter</td>  <td>Reprezentacja wartości za pomocą paska.</td>    <td>End of work: <meter value="0.9"></td>   <td>End of work: &lt;meter value="0.9"&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>noscript</td>   <td>Służy jako zamiennik, gdy przeglądrka nie obsługuje JS.</td>    <td>---</td>
+                                <td>noscript</td>   <td>Służy jako zamiennik, gdy przeglądrka nie obsługuje JS.</td>    <td>---</td>    <td>---</td>
                             </tr>
 
                             <tr>
-                                <td>object, param</td>  <td>Służy do wstawiania różnych rzeczy.</td>    <td>---</td>
+                                <td>object, param</td>  <td>Służy do wstawiania różnych rzeczy.</td>    <td>---</td>    <td>---</td>
                             </tr>
 
                             <tr>
-                                <td>optgroup</td>   <td>Służy do grupowania elementów w menu wyboru.</td>   <td><select><optgroup label="Sports cars"><option value="ferrari">Ferrari</option><option value="lamborghini">Lamborghini</option></optgroup><optgroup label="Luxury cars"><option value="mercedes">Mercedes</option><option value="bentley">Bentley</option></optgroup></select></td>
+                                <td>optgroup</td>   <td>Służy do grupowania elementów w menu wyboru.</td>   <td><select><optgroup label="Sports cars"><option value="ferrari">Ferrari</option><option value="lamborghini">Lamborghini</option></optgroup><optgroup label="Luxury cars"><option value="mercedes">Mercedes</option><option value="bentley">Bentley</option></optgroup></select></td>  <td>&lt;select&gt;&lt;optgroup label="Sports cars"&gt;&lt;option value="ferrari"&gt;Ferrari&lt;/option&gt;&lt;option value="lamborghini"&gt;Lamborghini&lt;/option&gt;&lt;/optgroup&gt;&lt;optgroup label="Luxury cars"&gt;&lt;option value="mercedes"&gt;Mercedes&lt;/option&gt;&lt;option value="bentley"&gt;Bentley&lt;/option&gt;&lt;/optgroup&gt;&lt;/select&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>output</td> <td>Tworzy pole dla wyników matematycznych.</td>    <td><form oninput="result.value=parseInt(a.value)+parseInt(b.value)"><input type="range" id="a" value="50"> +<input type="number" id="b" value="100"> =<output name="result" for="a b"></output></form></td>
+                                <td>output</td> <td>Tworzy pole dla wyników matematycznych.</td>    <td><form oninput="result.value=parseInt(a.value)+parseInt(b.value)"><input type="range" id="a" value="50"> +<input type="number" id="b" value="100"> = <output name="result" for="a b"></output></form></td>   <td>&lt;form oninput="result.value=parseInt(a.value)+parseInt(b.value)"&gt;&lt;input type="range" id="a" value="50"&gt; +&lt;input type="number" id="b" value="100"&gt; = &lt;output name="result" for="a b"&gt;&lt;/output&gt;&lt;/form&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>picture</td>    <td>Tworzy pole dla zdjęć zależnych od rozmiaru przeglądki.</td>    <td>---</td>
+                                <td>picture</td>    <td>Tworzy pole dla zdjęć zależnych od rozmiaru przeglądki.</td>    <td>---</td>    <td>---</td>
                             </tr>
 
                             <tr>
@@ -197,58 +233,62 @@
                                         element preserves      spaces,
                                             line-breaks, tabs...
                                     </pre></td>
+
+                                    <td>
+                                        &lt;pre&gt;The preelement preservesspaces,line-breaks, tabs...&lt;/pre&gt;
+                                    </td>
                             </tr>
 
                             <tr>
-                                <td>progress</td>   <td>Służy do tworzenia pasków postępu.</td> <td>---</td>
+                                <td>progress</td>   <td>Służy do tworzenia pasków postępu.</td> <td>---</td>    <td>---</td>
                             </tr>
 
                             <tr>
-                                <td>q</td>  <td>Służy do krótkiego cytowania.</td>  <td>John said, <q>He loves Star Wars movies.</q></td>
+                                <td>q</td>  <td>Służy do krótkiego cytowania.</td>  <td>John said, <q>He loves Star Wars movies.</q></td>   <td>John said, &lt;q&gt;He loves Star Wars movies.&lt;/q&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>ruby, rp, rt</td> <td>Służy do wyświetlania znaków w językach takich jak Japoński czy Chiński.</td> <td><ruby>漢 <rp>(</rp><rt>Kan</rt><rp>)</rp>字 <rp>(</rp><rt>ji</rt><rp>)</rp></ruby></td>
+                                <td>ruby, rp, rt</td> <td>Służy do wyświetlania znaków w językach takich jak Japoński czy Chiński.</td> <td><ruby>漢 <rp>(</rp><rt>Kan</rt><rp>)</rp>字 <rp>(</rp><rt>ji</rt><rp>)</rp></ruby></td> <td>&lt;ruby&gt;漢 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;Kan&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;字 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;ji&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;&lt;/ruby&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>s</td>  <td>Służy do przekreślenia tekstu zamiast "strike".</td>    <td>Here is some <s>strikethrough</s> text.</td>
+                                <td>s</td>  <td>Służy do przekreślenia tekstu zamiast "strike".</td>    <td>Here is some <s>strikethrough</s> text.</td>    <td>Here is some &lt;s&gt;strikethrough&lt;/s&gt; text.</td>
                             </tr>
 
                             <tr>
-                                <td>samp</td>   <td>Oznacza teskt, który jest winikiem działania programu.</td> <td>If the browser display an error message such as "<samp>HTTP 404 - File not found</samp>" you may simply have typed the incorrect url address.</td>
+                                <td>samp</td>   <td>Oznacza teskt, który jest winikiem działania programu.</td> <td>If the browser display an error message such as "<samp>HTTP 404 - File not found</samp>" you may simply have typed the incorrect url address.</td>  <td>If the browser display an error message such as "&lt;samp&gt;HTTP 404 - File not found&lt;/samp&gt;" you may simply have typed the incorrect url address.</td>
                             </tr>
 
                             <tr>
-                                <td>video, source</td> <td>Alternatywna forma wstawiania audio czy video.</td> <td><video controls="controls"><source src="birds.mp3" type="audio/mp3">Your browser does not support the HTML5 Video element.</video></td>
+                                <td>video, source</td> <td>Alternatywna forma wstawiania audio czy video.</td> <td><video controls="controls"><source src="birds.mp3" type="audio/mp3">Your browser does not support the HTML5 Video element.</video></td>  <td>&lt;video controls="controls"&gt;&lt;source src="birds.mp3" type="audio/mp3"&gt;Your browser does not support the HTML5 Video element.&lt;/video&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>svg</td>    <td>Blok wstawiający rysowane wykresy, rysunki.</td>    <td><svg width="500" height="350"><rect x="100" y="100" width="300" height="150" fill="yellow" stroke="black" stroke-width="5" /></svg></td>
+                                <td>svg</td>    <td>Blok wstawiający rysowane wykresy, rysunki.</td>    <td><svg width="500" height="350"><rect x="100" y="100" width="300" height="150" fill="yellow" stroke="black" stroke-width="5" /></svg></td>    <td>&lt;svg width="500" height="350"&gt;&lt;rect x="100" y="100" width="300" height="150" fill="yellow" stroke="black" stroke-width="5" /&gt;&lt;/svg&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>template</td>   <td>Służy do wstawiania danych za pomocą JS(dane nie są renderowane podczas wczytywania strony).</td>   <td>---</td>
+                                <td>template</td>   <td>Służy do wstawiania danych za pomocą JS(dane nie są renderowane podczas wczytywania strony).</td>   <td>---</td>    <td>---</td>
                             </tr>
 
                             <tr>
-                                <td>tfoot</td>  <td>Stopka dla tabeli.</td> <td>---</td>
+                                <td>tfoot</td>  <td>Stopka dla tabeli.</td> <td>---</td>    <td>---</td>
                             </tr>
 
                             <tr>
-                                <td>time</td>   <td>Służy do wstawiania daty i godziny.</td>    <td>The library opens at <time>8:30 am</time> every morning. The concert took place on <time datetime="2016-12-31 12:00">31 Dec</time>.</td>
+                                <td>time</td>   <td>Służy do wstawiania daty i godziny.</td>    <td>The library opens at <time>8:30 am</time> every morning. The concert took place on <time datetime="2016-12-31 12:00">31 Dec</time>.</td>    <td>The library opens at &lt;time&gt;8:30 am&lt;/time&gt; every morning. The concert took place on &lt;time datetime="2016-12-31 12:00"&gt;31 Dec&lt;/time&gt;.</td>
                             </tr>
 
                             <tr>
-                                <td>track</td>  <td>Dodaje napisy.</td> <td>---<track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English"></td>
+                                <td>track</td>  <td>Dodaje napisy.</td> <td>---</td>    <td>&lt;track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English"&gt;</td>
                             </tr>
 
                             <tr>
-                                <td>var</td>    <td>Służy do oznacznie tekstu jako zmienną.</td>    <td>A simple equation: <var>x</var> = <var>y</var> + 2 </td>
+                                <td>var</td>    <td>Służy do oznacznie tekstu jako zmienną.</td>    <td>A simple equation: <var>x</var> = <var>y</var> + 2 </td>    <td>A simple equation: &lt;var&gt;x&lt;/var&gt; = &lt;var&gt;y&lt;/var&gt; + 2 </td>
                             </tr>
 
                             <tr>
-                                <td>wbr</td>    <td>Określa pozycję w tekście, w której przeglądarka może opcjonalnie przełamać linię, jeśli to konieczne.</td> <td>The XML<wbr>Http<wbr>Request object is the key to AJAX</td>
+                                <td>wbr</td>    <td>Określa pozycję w tekście, w której przeglądarka może opcjonalnie przełamać linię, jeśli to konieczne.</td> <td>The XML<wbr>Http<wbr>Request object is the key to AJAX</td> <td>The XML&lt;wbr&gt;Http&lt;wbr&gt;Request object is the key to AJAX</td>
                             </tr>
                         </tbody>
                     </table> 
@@ -259,16 +299,22 @@
                         <caption>Oprócz oczywistych.</caption>
                         <thead><th>Znacznik</th>    <th>Opis</th>   <th>Działanie</th></thead>
                         <tbody>
+                            <style>.class1 {color:yellow;} 
+                            .class2{background: blue;} 
+                            .class1.class2{color:green;background: purple;}
+                            .class1 .class2 {color:darkgrey; background: white;}
+                            /*div, p {color:blue;}*/
+                            </style>  
                             <tr>
-                                <td>.class1.class2</td> <td>Działa jeżeli obiekt ma klasę class1 i class2.</td>  <td>---</td>
+                                <td>.class1.class2</td> <td>Działa jeżeli obiekt ma klasę class1 i class2.</td>  <td><span class = "class1">Class 1.</span>  <span class = "class2">Class 2.</span>  <span class="class1 class2">Class1 & Class2</span></td>
                             </tr>
 
                             <tr>
-                                <td>.class1 .class2</td>    <td>Działa jeżeli obiekt ma class2 i zawiera się w class1.</td>  <td>---</td>
+                                <td>.class1 .class2</td>    <td>Działa jeżeli obiekt ma class2 i zawiera się w class1.</td>  <td><span class="class 1">AAA<br><span class="class2">BBB</span></span>??? coś nie działa.</td>
                             </tr>
 
                             <tr>
-                                <td>div, p</td> <td>Działa na wszystkie znaczniki div i p.</td>  <td>---</td>
+                                <td>div, p</td> <td>Działa na wszystkie znaczniki div i p.</td>  <td><div>Tekst w divie <p>Tekst w p</p></div></td>
                             </tr>
                             
                             <tr>
