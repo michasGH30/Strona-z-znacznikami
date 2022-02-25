@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zaznaczony za pomocą JS</title>
+        <style>
+            input:indeterminate
+            {
+                width: 50px;
+                height: 50px;
+            }
+        </style>  
+    </head>
+    <body>
+        <input type="checkbox"  id="check"> Zaznaczony za pomocą JS
+        <script>
+            var check = document.getElementById("check");
+            check.indeterminate = true;
+        </script>
+    </body>
+</html>

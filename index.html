@@ -299,174 +299,245 @@
                         <caption>Oprócz oczywistych.</caption>
                         <thead><th>Znacznik</th>    <th>Opis</th>   <th>Działanie</th></thead>
                         <tbody>
-                            <style>.class1 {color:yellow;} 
-                            .class2{background: blue;} 
-                            .class1.class2{color:green;background: purple;}
-                            .class1 .class2 {color:darkgrey; background: white;}
-                            /*div, p {color:blue;}*/
-                            </style>  
                             <tr>
-                                <td>.class1.class2</td> <td>Działa jeżeli obiekt ma klasę class1 i class2.</td>  <td><span class = "class1">Class 1.</span>  <span class = "class2">Class 2.</span>  <span class="class1 class2">Class1 & Class2</span></td>
+                                <td>.class1.class2</td> <td>Działa jeżeli obiekt ma klasę class1 i class2.</td>  <td><iframe src="css_1.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_1.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>.class1 .class2</td>    <td>Działa jeżeli obiekt ma class2 i zawiera się w class1.</td>  <td><span class="class 1">AAA<br><span class="class2">BBB</span></span>??? coś nie działa.</td>
+                                <td>.class1 .class2</td>    <td>Działa jeżeli obiekt ma class2 i zawiera się w class1.</td>  <td><iframe src="css_2.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_2.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>div, p</td> <td>Działa na wszystkie znaczniki div i p.</td>  <td><div>Tekst w divie <p>Tekst w p</p></div></td>
+                                <td>div, p</td> <td>Działa na wszystkie znaczniki div i p.</td> <td><iframe src="css_3.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_3.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
                             
                             <tr>
-                                <td>div > p</td>    <td>Działa na wszystkie znaczniki p które mają rodzica div.</td> <td>---</td>
+                                <td>div > p</td>    <td>Działa na wszystkie znaczniki p które mają rodzica div.</td>    <td><iframe src="css_4.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_4.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>div + p</td>    <td>Działa na znaczniki p które są bezpośrednio po div.</td>    <td>---</td>
+                                <td>div + p</td>    <td>Działa na znaczniki p które są bezpośrednio po div.</td>    <td><iframe src="css_5.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_5.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>p ~ ul</td> <td>Działa kiedy znacznik ul jest poprzedzony znacznikiem p</td>    <td>---</td>
+                                <td>p ~ ul</td> <td>Działa kiedy znacznik ul jest poprzedzony znacznikiem p</td>    <td><iframe src="css_6.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_6.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>[target]</td>   <td>Działa na znaczniki z atrybutem target.</td>    <td>---</td>
+                                <td>[target]</td>   <td>Działa na znaczniki z atrybutem target.</td>    <td><iframe src="css_7.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_7.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>[target=_blank</td> <td>Działa na znaczniki z atrybutem target i wartością _blank.</td> <td>---</td>
+                                <td>[target=_blank</td> <td>Działa na znaczniki z atrybutem target i wartością _blank.</td> <td><iframe src="css_8.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_8.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>[title~=flower]</td> <td>Działa na znacznikach gdzie tytuł zawiera "flower".</td>   <td>---</td>
+                                <td>[title~=flower]</td> <td>Działa na znacznikach gdzie tytuł zawiera "flower".</td>   <td><iframe src="css_9.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_9.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>[lang|=en]</td> <td>Działa na znacznikach gdzie atrybut lang jest w zaczyna się od "en".</td>   <td>---</td>
+                                <td>[lang|=en]</td> <td>Działa na znacznikach gdzie atrybut lang jest w zaczyna się od "en".</td>   <td><iframe src="css_10.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_10.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>a[href^="https"]</td>   <td>Działa na znacznikach a gdzie wartość atrybutu href zaczyna się od "https".</td>    <td>---</td>
+                                <td>a[href^="https"]</td>   <td>Działa na znacznikach a gdzie wartość atrybutu href zaczyna się od "https".</td>    <td><iframe src="css_11.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_11.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>a[href$=".pdf"]</td>    <td>Działa na znacznikach a gdzie wartość atrybutu href kończy się na ".pdf".</td>  <td>---</td>
+                                <td>a[href$=".pdf"]</td>    <td>Działa na znacznikach a gdzie wartość atrybutu href kończy się na ".pdf".</td>  <td><iframe src="css_12.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_12.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>a[href*="w3schools"]</td>   <td>Działa na znacznikach a gdy wartosć atrybutu href zawiera słowo "w3schools".</td>   <td>---</td>
+                                <td>a[href*="w3schools"]</td>   <td>Działa na znacznikach a gdy wartosć atrybutu href zawiera słowo "w3schools".</td>   <td><iframe src="css_13.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_13.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>p::after, p::before</td>   <td>Definiuje akcje, które wykonają się po(przed) znacziku p.</td>  <td>---</td>
+                                <td>p::after, p::before</td>   <td>Definiuje akcje, które wykonają się po(przed) znaczniku p.</td>  <td><iframe src="css_14.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_14.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>input:checked</td>  <td>Działa na zaznaczonych elementach.</td> <td>---</td>
+                                <td>input:checked</td>  <td>Działa na zaznaczonych elementach.</td> <td><iframe src="css_15.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_15.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>input:default</td>  <td>Działa na domyślnie zaznaczonych elementach.</td>   <td>---</td>
+                                <td>input:default</td>  <td>Działa na domyślnie zaznaczonych elementach.</td>   <td><iframe src="css_16.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_16.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>input:enabled, input:disabled</td> <td>Działa na elementach z artybutem enabled(disabled).</td> <td>---</td>
+                                <td>input:enabled, input:disabled</td> <td>Działa na elementach z artybutem enabled(disabled).</td> <td><iframe src="css_17.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_17.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>p:empty</td>    <td>Działa na pustych elementach.</td>  <td>---</td>
+                                <td>p:empty</td>    <td>Działa na pustych elementach.</td>  <td><iframe src="css_18.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_18.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>p:first-child, p:last-child</td>  <td>Działa na każdy znacznik p który jest pierwszym(ostatnim) elementem w bloku.</td> <td>---</td>
+                                <td>p:first-child, p:last-child</td>  <td>Działa na każdy znacznik p który jest pierwszym(ostatnim) elementem w bloku.</td> <td><iframe src="css_19.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_19.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>p:first-letter, p:first-line</td>   <td>Działa na pierwszą literę(linię) w znaczniku p.</td>    <td>---</td>
+                                <td>p:first-letter, p:first-line</td>   <td>Działa na pierwszą literę(linię) w znaczniku p.</td>    <td><iframe src="css_20.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_20.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>p:first-of-type, p:last-of-type</td>    <td>Działa na pierwszy(ostatni) znacznik p w????</td>    <td>---</td>
+                                <td>p:first-of-type, p:last-of-type</td>    <td>Działa na pierwszy(ostatni) znacznik p w????</td>    <td><iframe src="css_21.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_21.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>:fullscreen</td>    <td>Działa na elementy, kiedy są w trybie fullscreen</td>   <td>---</td>
+                                <td>:fullscreen</td>    <td>Działa na elementy, kiedy są w trybie fullscreen</td>   <td><iframe src="css_22.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_22.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>input:in-range, input:out-of-range</td> <td>Działa na elementy kiedy wpiszemy wartość z(poza) zakresu.</td> <td>---</td>
+                                <td>input:in-range, input:out-of-range</td> <td>Działa na elementy kiedy wpiszemy wartość z(poza) zakresu.</td> <td><iframe src="css_23.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_23.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>input:indeterminate</td>    <td>Działa na wstepnie zaznaczonych elementach za pomocą JS.</td>   <td>---</td>
+                                <td>input:indeterminate</td>    <td>Działa na wstepnie zaznaczonych elementach za pomocą JS.</td>   <td><iframe src="css_24.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_24.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>input:valid, input:invalid</td>  <td>Działa na elemtach, które są (nie)poprawnie zaznaczone.</td>  <td>---</td>
+                                <td>input:valid, input:invalid</td>  <td>Działa na elemtach, które są (nie)poprawnie wypełnione.</td>  <td><iframe src="css_25.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_25.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
+                            </tr>
                             </tr>
 
                             <tr>
-                                <td>p:lang(pl)</td> <td>Działa elementach z danym językiem.</td>    <td>---</td>
+                                <td>p:lang(pl)</td> <td>Działa elementach z danym językiem.</td>    <td><iframe src="css_26.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_26.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>::marker</td>   <td>Modyfikuje marker w liście.</td>    <td>---</td>
+                                <td>::marker</td>   <td>Modyfikuje marker w liście.</td>    <td><iframe src="css_27.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_27.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>:not(p)</td>    <td>Działa na wszystko oprócz znacznika p.</td> <td>---</td>
+                                <td>:not(p)</td>    <td>Działa na wszystko oprócz znacznika p.</td> <td><iframe src="css_28.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_28.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
                             
                             <tr>
-                                <td>p:nth-child(2)</td> <td>???.</td>   <td>---</td>
+                                <td>p:nth-child(2)</td> <td>???.</td>   <td><iframe src="css_29.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_29.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>p:nth-last-child(2)</td>    <td>???.</td>   <td>---</td>
+                                <td>p:nth-last-child(2)</td>    <td>???.</td>   <td><iframe src="css_30.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_30.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>p:nth-last-of-type(2)</td>  <td>Działa na element, który jest n-ty od końca.??</td> <td>---</td>
+                                <td>p:nth-last-of-type(2)</td>  <td>Działa na element, który jest n-ty od końca.??</td> <td><iframe src="css_31.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_31.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>p:nth-of-type(2)</td>   <td>Działa na każdy n-ty element.</td>  <td>---</td>
+                                <td>p:nth-of-type(2)</td>   <td>Działa na każdy n-ty element. Każdy trzeci: p:ntf-of-type(3n+0).</td>  <td><iframe src="css_32.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_32.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>p:only-of-type</td> <td>???.</td>   <td>---</td>
+                                <td>p:only-of-type</td> <td>???.</td>   <td><iframe src="css_33.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_33.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>p:only-child</td>   <td>Działa gdy element jest jedyny w bloku.</td>    <td>---</td>
+                                <td>p:only-child</td>   <td>Działa gdy element jest jedyny w bloku.</td>    <td><iframe src="css_34.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_34.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>input::placeholder</td> <td>Definiuje styl placeholder'a.</td>  <td>---</td>
+                                <td>input::placeholder</td> <td>Definiuje styl placeholder'a.</td>  <td><iframe src="css_35.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_35.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>input:read-only</td>    <td>Działa na elementach, które są read-only.</td>  <td></td>
+                                <td>input:read-only, input:read-write</td>    <td>Działa na elementach, które są(nie są) read-only.</td>  <td><iframe src="css_36.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_36.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>input:read-write</td>   <td>Działa na elemntach, które nie są read-only.</td>   <td>---</td>
+                                <td>input:required, input:optional</td> <td>Działa na elementach, które są (nie)obowiązkowe do uzupełnienia.</td>    <td><iframe src="css_37.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_37.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>input:required, input:optional</td> <td>Działa na elementach, które są (nie)obowiązkowe do uzupełnienia.</td>    <td>---</td>
+                                <td>:root</td> <td>Definiuje styl dla okna root dokumentu.</td> <td><iframe src="css_38.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_38.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>:root</td> <td>Definiuje styl dla okna root dokumentu.</td> <td>---</td>
+                                <td>::selection</td>    <td>Działa na zaznaczony tekst.</td>    <td><iframe src="css_39.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_39.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
 
                             <tr>
-                                <td>::selection</td>    <td>Działa na zaznaczony tekst.</td>    <td>---</td>
-                            </tr>
-
-                            <tr>
-                                <td>:target</td>    <td>Zmienia elementy na które wskazują kotwice.</td>    <td>---</td>
+                                <td>:target</td>    <td>Zmienia elementy na które wskazują kotwice.</td>    <td><iframe src="css_40.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="css_40.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
                             </tr>
                         </tbody>
                     </table>

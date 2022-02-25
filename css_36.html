@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Read-only/Read-write</title>
+        <style>
+            input:read-only
+            {
+                background: green;
+            } 
+            input:read-write
+            {
+                background: yellow;
+            }
+        </style>  
+    </head>
+    <body>
+        Pole możliwe do edycji: <input type="text"><br>
+        Pole tylko do odczytu: <input type="text" readonly value="Tylko do odczytu">
+    </body>
+</html>

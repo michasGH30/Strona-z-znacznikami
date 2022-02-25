@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>(Nie)Obowiązkowe</title>
+        <style>
+            input:required
+            {
+                background: yellow;
+            } 
+            input:optional
+            {
+                background: green;
+            }
+            #sub
+            {
+                background: white;;
+            }
+        </style>  
+    </head>
+    <body>
+        <form action="#">
+            Wymagane: <input type="text" required><br>
+            Niewymagane: <input type="text"><br>
+            <input type="submit" value="Wyślij" id="sub">
+        </form>
+    </body>
+</html>
