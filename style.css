@@ -39,19 +39,24 @@ body
 {
     clear: both;
 }
-.container
+.container, a
 {
     width: 90%;
     margin: auto;
+    color:#d1d6cf;
 }
 main
 {
-    background: red;
+    background: #1d2a35;
     padding: 10px;
 }
 aside
 {
-    background: yellow;
+    background: #38444d;
+    text-align: center;
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 20px;
 }
 article>header>h1
 {
@@ -60,11 +65,24 @@ article>header>h1
 }
 table, th, td
 {
-    border: 1px solid black;
+    border: 3px solid black;
     border-collapse: collapse;
     text-align: center;
 }
 th, td
 {
     padding: 2px;
+}
+table
+{
+    margin: auto;
+}
+footer
+{
+    margin-top: 10px;
+    background: lightblue;
+    color:white;
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
 }
