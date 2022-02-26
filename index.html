@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Znaczniki HTML5 i CSS3</title>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
+        
     </head>
     <body>
         <header>
@@ -19,12 +19,15 @@
 
         <div class="container">
             <main>
+                <nav>
+                    <input type="button" onclick="html_table()" value="Znaczniki HTML5" id="html_table_but">
+                    <input type="button" onclick="css_table()" value="Znaczniki CSS3" id="css_table_but">
+                </nav>
                 <article>
-                    <header>
+                    <header id="html_table_h">
                         <h1>Znaczniki w HTML5</h1>
                     </header>
-                    <table>
-                        <caption>Oprócz oczywistych</caption>
+                    <table id="html_table">
                         <thead><th>Znacznik</th>    <th>Opis</th>   <th>Działanie</th> <th>Kod</th></thead>
                         <tbody>
 
@@ -293,15 +296,14 @@
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td colspan="4"><a href="https://www.tutorialrepublic.com/html-reference/html5-tags.php" target="_blank">Źródło</a></td>
+                                <td colspan="4"><a href="https://www.tutorialrepublic.com/html-reference/html5-tags.php" target="_blank">Źródło: <q>www.tutorialrepublic.com</q></a></td>
                             </tr>
                         </tfoot>
                     </table> 
                 </article>
                 <article>
-                    <header><h1>Składnia CSS3</h1></header>
-                    <table>
-                        <caption>Oprócz oczywistych.</caption>
+                    <header id="css_table_h"><h1>Składnia CSS3</h1></header>
+                    <table id="css_table">
                         <thead><th>Znacznik</th>    <th>Opis</th>   <th>Działanie</th></thead>
                         <tbody>
                             <tr>
@@ -547,7 +549,7 @@
                         </tbody>
                         <tfoot>
                             <tr>
-                                <td colspan="3"><a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">Źródło</a></td>
+                                <td colspan="3"><a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">Źródło: <q>www.w3schools.com</q></a></td>
                             </tr>
                         </tfoot>
                     </table>
@@ -559,5 +561,6 @@
         </div>
 
         <footer>&copy; Michał Żuk 2022. Źródła są podane w stopkach poszczególnych sekcji.</footer>
+        <script src="script.js"></script>
     </body>
 </html>
