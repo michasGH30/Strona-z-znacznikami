@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Funkcja conic-gradient()</title>
+        <style>
+            :root
+            {
+                color:#d1d6cf;
+            }
+            body {
+                counter-reset: div;
+            }
+            div::before
+            {
+                counter-increment: div;
+                content: "Div " counter(div) ": ";
+            }
+        </style> 
+            
+    </head>
+    <body>
+        <div>Tekst</div>
+        <div>Tekst</div>
+        <div>Tekst</div>
+        <div>Tekst</div>
+        <div>Tekst</div>
+        <div>Tekst</div>
+    </body>
+</html>

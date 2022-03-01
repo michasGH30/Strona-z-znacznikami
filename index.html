@@ -22,6 +22,7 @@
                 <nav>
                     <input type="button" onclick="html_table()" value="Znaczniki HTML5" id="html_table_but">
                     <input type="button" onclick="css_table()" value="Znaczniki CSS3" id="css_table_but">
+                    <input type="button" onclick="cssf_table()" value="Funkcje CSS3" id="cssf_table_but">
                 </nav>
                 <article>
                     <header id="html_table_h">
@@ -554,13 +555,78 @@
                         </tfoot>
                     </table>
                 </article>
+                <article>
+                    <header id="cssf_table_h"><h1>Funkcje CSS3</h1></header>
+                    <table id="cssf_table">
+                        <thead><th>Funkcja</th>    <th>Opis</th>   <th>Działanie</th></thead>
+                        <tbody>
+                            <tr>
+                                <td>attr()</td> <td>Zwraca wartość danego atrybutu. attr(href)</td>    <td><iframe src="cssf_1.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="cssf_1.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
+                            </tr>
+
+                            <tr>
+                                <td>calc()</td> <td>Zwraca wartość z obliczeń. calc(100% - Apx)</td>    <td><iframe src="cssf_2.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="cssf_2.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
+                            </tr>
+
+                            <tr>
+                                <td>Gradienty</td>   <td><ul>
+                                    <li>conic</li>
+                                    <li>linear</li>
+                                    <li>radial</li>
+                                    <li>repeating</li>
+                                </ul></td>   <td><iframe src="cssf_3.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="cssf_3.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
+                            </tr>
+
+                            </tr>
+
+                            <tr>
+                                <td>counter()</td>  <td>Dodaje licznik dla danej sekcji zadeklarowanej w body i inkrementowanej w każdym wystąpnieniu kolejnego elementu. body -> content-reset:A, el -> counter-increment:A, counter(A)</td>    <td><iframe src="cssf_4.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="cssf_4.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
+                            </tr>
+
+                            <tr>
+                                <td>cubic-bezier()</td> <td>??? coś z animacją. cubic-bezier(x<sub>1</sub>, y<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub>)</td>   <td><iframe src="cssf_5.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="cssf_5.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
+                            </tr>
+
+                            <tr>
+                                <td>hsl(), hsla()</td>  <td>Zwraca kolor w formacie HSL(A). hsl(a)(x,y,z,(o))</td> <td><iframe src="cssf_6.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="cssf_6.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
+                            </tr>
+
+                            <tr>
+                                <td>rgb(), rgba()</td>  <td>Zwraca kolor w formacie RGB(A). rgb(a)(x, y, z, (o))</td>   <td><iframe src="cssf_7.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="cssf_7.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
+                            </tr>
+
+                            <tr>
+                                <td>max(), min()</td>   <td>Zwraca większą(mniejszą) wartość z podanych. max(x, y, ...) min(x, y, ...)</td> <td><iframe src="cssf_8.html" width="200" height="200" scrolling="auto">
+                                    <p>[Your browser does not support frames or is currently configured not to display frames. However, you may visit <a href="cssf_8.html" target="_blank">the related document.</a>]</p>
+                                </iframe></td>
+                            </tr>
+                        </tbody>
+                        <tr>
+                            <td colspan="3"><a href="https://www.w3schools.com/cssref/css_functions.asp" target="_blank">Źródło: <q>www.w3schools.com</q></a></td>
+                        </tr>
+                    </table>
+                </article>
             </main>
             <aside>
                 Strona wykonana w celu zapoznania i doskonalenia się w HTML5 CSS3 i JS.
             </aside>
         </div>
 
-        <footer>&copy; Michał Żuk 2022. Źródła są podane w stopkach poszczególnych sekcji.</footer>
+        <footer>&copy; Michał Żuk 2022. Źródła są podane w stopkach poszczególnych tabel.</footer>
         <script src="script.js"></script>
     </body>
 </html>

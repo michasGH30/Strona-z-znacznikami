@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Funkcje gradientów</title>
+        <style>
+            :root
+            {
+                color:#d1d6cf;
+            }
+            
+            .class1
+            {
+                background-color: darkviolet;
+                background-image: conic-gradient(red, yellow, green);
+                width: 150px;
+                height: 150px;
+            }
+            .class2
+            {
+                background-color: darkviolet;
+                background-image: linear-gradient(red, yellow, green);
+                width: 150px;
+                height: 150px;
+            }
+            .class3
+            {
+                background-color: darkviolet;
+                background-image: radial-gradient(red, yellow, green);
+                width: 150px;
+                height: 150px;
+            }
+            .class4
+            {
+                background-color: darkviolet;
+                background-image: repeating-conic-gradient(red, yellow 10%, green 15%);
+                width: 150px;
+                height: 150px;
+            }
+            .class5
+            {
+                background-color: darkviolet;
+                background-image: repeating-linear-gradient(red, yellow 10%, green 15%);
+                width: 150px;
+                height: 150px;
+            }
+            .class6
+            {
+                background-color: darkviolet;
+                background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+                width: 150px;
+                height: 150px;
+            }
+            .cap
+            {
+                margin-top: 10px;
+                margin-bottom: 5px;
+                display:block;
+            }
+        </style> 
+            
+    </head>
+    <body>
+        <span class="cap">conic-gradient(x,y,z)</span>
+        <div class="class1"></div>
+        <span class="cap">linear-gradient(x,y,z)</span>
+        <div class="class2"></div>
+        <span class="cap">radial-gradient(x,y,z)</span>
+        <div class="class3"></div>
+        <span class="cap">repeating-conic-gradient(x,y,z)</span>
+        <div class="class4"></div>
+        <span class="cap">repeating-linear-gradient(x,y,z)</span>
+        <div class="class5"></div>
+        <span class="cap">repeating-radial-gradient(x,y,z)</span>
+        <div class="class6"></div>
+    </body>
+</html>
